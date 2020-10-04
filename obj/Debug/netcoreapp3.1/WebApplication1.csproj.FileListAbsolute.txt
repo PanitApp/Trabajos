@@ -59,3 +59,8 @@ C:\Users\moise\source\repos\WebApplication1\bin\Debug\netcoreapp3.1\runtimes\win
 C:\Users\moise\source\repos\WebApplication1\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\moise\source\repos\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csproj.CoreCompileInputs.cache
 C:\Users\moise\source\repos\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\moise\source\repos\WebApplication1\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\moise\source\repos\WebApplication1\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\moise\source\repos\WebApplication1\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\moise\source\repos\WebApplication1\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\moise\source\repos\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.MvcApplicationPartsAssemblyInfo.cs

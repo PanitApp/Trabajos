@@ -12,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using WebApplication1.Database;
 
 namespace WebApplication1
@@ -41,6 +42,15 @@ namespace WebApplication1
                         errorNumbersToAdd: null);
                     });
             });
+            services.AddSwaggerGen(options => {
+                options.DescribeAllEnumsAsStrings();
+                options.SwaggerDoc("v1", new OpenApiInfo { 
+                    Title = "Trabajos HTTP API",
+                    Version = "v1",
+                    Description = "This is a Data-Driven/CRUD microservice"
+
+                });
+            });
             services.AddControllers();
         }
 
@@ -61,6 +71,11 @@ namespace WebApplication1
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseSwagger().UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API v1");
             });
         }
     }
