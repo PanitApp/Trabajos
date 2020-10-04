@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>8b44237f-307d-412a-8303-fd6568eeeb05</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200928040444_initial.cs" />
+    <Compile Remove="Migrations\20200928040444_initial.Designer.cs" />
+    <Compile Remove="Migrations\20201003195317_InitialCreate.cs" />
+    <Compile Remove="Migrations\20201003195317_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20201003225255_InitialCreate.cs" />
+    <Compile Remove="Migrations\20201003225255_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20201003230000_InitialCreate.cs" />
+    <Compile Remove="Migrations\20201003230000_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20201003230911_InitialCreate.cs" />
+    <Compile Remove="Migrations\20201003230911_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20201003235321_test.cs" />
+    <Compile Remove="Migrations\20201003235321_test.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+  </ItemGroup>
+
+
+</Project>
