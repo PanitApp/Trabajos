@@ -9,12 +9,14 @@ namespace WebApplication1.Controllers
 {
     public class Publicacion
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        [Key]
         public int Id { get; set; }
+        [Required]
         public string Descripcion { get; set; }
+        [Required]
         public DateTime FechaPublicacion { get; set; }
+        [Required]
         public string Archivos { get; set; }
+        [Required]
         public string CursoId { get; set; }
         public Publicacion() { }
     }

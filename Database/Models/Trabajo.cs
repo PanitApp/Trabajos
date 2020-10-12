@@ -9,16 +9,20 @@ namespace WebApplication1.Database.Entities
 {
     public class Trabajo
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        [Key]
         public int Id { get; set; }
+        [Required]
         public string NombreTrabajo { get; set; }
         public double Calificacion { get; set; }
+        [Required]
         public string Estado { get; set; }
         public string Comentario { get; set; }
+        [Required]
         public DateTime FechaEntrega { get; set; }
+        [Required]
         public string Archivo { get; set; }
+        [Required]
         public string EstudianteId { get; set; }
+        [Required]
         public string PublicacionId { get; set; }
         public Trabajo() { }
     }
