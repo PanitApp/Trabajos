@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NnAUmMotNLINKdMm65Skjx+I3+A+x6XvL9sPj2J2M18m6dSKn/gQ/DtOA0ixLwhX5YSo+tRyz2of6NLyGFQVVQ==",
+  "dgSpecHash": "HmiLM+QuLYHUOaOgTnKdET1W99qKL4JGOh5O+ftRI47w2pd2U+e2lfHlUVPqlTSRUpF8OeFfC5Njke+Hf4zfrw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\moise\\source\\repos\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "C:\\Users\\moise\\Documents\\H\\Arquitectura\\Microservicio\\Trabajos\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\moise\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\moise\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

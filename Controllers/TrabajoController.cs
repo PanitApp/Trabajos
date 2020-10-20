@@ -43,6 +43,40 @@ namespace WebApplication1.Controllers
             return trabajo;
         }
 
+        // GET api/<TrabajoController>/estudiante/5
+        [HttpGet("estudiante/{id}")]
+        public async Task<ActionResult<IEnumerable<Trabajo>>> GetTrabajosByEstudianteId(string id)
+        {
+            return await _context.Trabajos.
+            Select(x => new Trabajo{
+                Id = x.Id,
+                NombreTrabajo = x.NombreTrabajo,
+                Calificacion = x.Calificacion,
+                Estado = x.Estado,
+                FechaEntrega = x.FechaEntrega,
+                Archivo = x.Archivo,
+                EstudianteId = x.EstudianteId,
+                PublicacionId = x.PublicacionId
+            }).Where(x => x.EstudianteId == id).ToListAsync();
+        }
+
+        // GET api/<TrabajoController>/publicacion/5
+        [HttpGet("publicacion/{id}")]
+        public async Task<ActionResult<IEnumerable<Trabajo>>> GetTrabajoByPublicacionId(string id)
+        {
+            return await _context.Trabajos.
+            Select(x => new Trabajo{
+                Id = x.Id,
+                NombreTrabajo = x.NombreTrabajo,
+                Calificacion = x.Calificacion,
+                Estado = x.Estado,
+                FechaEntrega = x.FechaEntrega,
+                Archivo = x.Archivo,
+                EstudianteId = x.EstudianteId,
+                PublicacionId = x.PublicacionId
+            }).Where(x => x.PublicacionId == id).ToListAsync();
+        }
+
         // POST api/<TrabajoController>
         [HttpPost]
         public async Task<ActionResult<Trabajo>> PostTrabajo(Trabajo trabajo)

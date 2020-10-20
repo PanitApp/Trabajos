@@ -43,6 +43,20 @@ namespace WebApplication1.Controllers
             return publicacion;
         }
 
+        // GET api/<PublicacionController>/curso/5
+        [HttpGet("curso/{id}")]
+        public async Task<ActionResult<IEnumerable<Publicacion>>> GetPublicacionByCursoId(string id)
+        {   
+            return await _context.Publicaciones.
+            Select(x => new Publicacion{
+                Id = x.Id,
+                Descripcion = x.Descripcion,
+                FechaPublicacion = x.FechaPublicacion,
+                Archivos = x.Archivos,
+                CursoId = x.CursoId
+            }).Where(x => x.CursoId == id).ToListAsync();
+        }
+
         // POST api/<PublicacionController>
         [HttpPost]
         public async Task<ActionResult<Publicacion>> PostPublicacion(Publicacion publicacion)
